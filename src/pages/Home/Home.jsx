@@ -6,7 +6,7 @@ import {getSearch} from "../../redux/slicers/searchSlice.js";
 
 const Home = ({inputValue}) => {
     const dispatch = useDispatch();
-    const {movies} = useSelector((store) => store.discover);
+    const {movies,status} = useSelector((store) => store.discover);
     const {search} = useSelector((store) => store.search);
 
     useEffect(() => {
@@ -16,7 +16,7 @@ const Home = ({inputValue}) => {
 
     return (
         <div className='home'>
-            <MovieList movies={movies} search={search} />
+            <MovieList movies={movies} search={search} status={status}/>
         </div>
     );
 };

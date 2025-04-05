@@ -4,6 +4,7 @@ import {API_KEY, API_URL} from "../../constants/api.js";
 
 const initialState = {
     movies: [],
+    status :'idle'
 }
 
 export const getMovies = createAsyncThunk('getMovies', async (genre) => {
@@ -16,7 +17,11 @@ export const discoverSlice = createSlice({
     initialState,
     reducers: {},
     extraReducers: (builder)=>{
+        builder.addCase(getMovies.pending,(state)=>{
+            state.status = "loading";
+        })
         builder.addCase(getMovies.fulfilled,(state,action)=>{
+            state.status = "idle";
             state.movies = action.payload;
         })
     }
