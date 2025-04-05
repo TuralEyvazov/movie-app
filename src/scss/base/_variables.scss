@@ -1,0 +1,37 @@
+$grid_col:12;
+
+$break_points: (
+        xs:0,
+        sm: 576px,
+        md: 768px,
+        lg: 960px,
+        xl: 1200px,
+);
+
+$wh_size: 5,10,12,14,16,18,20,22,24,26,28,30,33,35,38,40,44,48,50,54,58,60,64,68,70,72,74,78,80,84,88,90,94,96,98,100;
+
+$padding_margin:0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60;
+
+$weights:100,200,300,400,500,600,700,800,900;
+
+
+$align:(
+  center:center,
+  end:flex-end,
+  start:flex-start,
+);
+
+$justify:(
+        between:space-between,
+        around:space-around,
+        evenly:space-evenly,
+        center:center,
+        end:flex-end,
+        start:flex-start,
+);
+
+
+
+
+
+

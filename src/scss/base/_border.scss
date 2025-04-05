@@ -1,0 +1,12 @@
+@for $i from 0 through 10{
+  .border-#{$i}{
+    border: #{$i}px solid #d5d5d5;
+  }
+  .rounded-#{$i}{
+    border-radius: #{$i}px;
+  }
+}
+
+.rounded-full {
+  border-radius: 100%;
+}

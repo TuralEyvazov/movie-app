@@ -1,0 +1,22 @@
+//@mixin btn($py, $px,$bgc) {
+//  padding: $py $px;
+//  background-color: $bgc;
+//  @extend .text-white,.fs-16,.rounded-6,;
+//  @content;
+//}
+//
+//
+//
+//.section-head{
+//  @extend .d-flex, .justify-center,.flex-column,.item-center,.mb-20;
+//  span{
+//    @extend .family-secondary,.text-dark-grey,.fs-20;
+//    text-transform: uppercase;
+//  }
+//  h4{
+//    @extend .fs-34,.family-secondary,.my-18,.text-center;
+//  }
+//  i{
+//    @extend .fs-46,.text-primary;
+//  }
+//}

@@ -1,0 +1,45 @@
+@use '../../scss/main' as *;
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  @extend .family-primary;
+
+
+  h1 {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 30px;
+  }
+
+  form {
+    input {
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.85);
+      height: 30px;
+      color: rgba(255, 255, 255, 0.85) !important;
+      padding: 20px 10px;
+      font-size: 18px;
+      display: inline-block;
+
+
+    }
+    input::placeholder {
+      color: rgba(255, 255, 255, 0.85);
+    }
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    a {
+      color: white;
+      @extend .ml-20,.fs-30;
+      i{
+        @extend .fs-30;
+      }
+    }
+  }
+}

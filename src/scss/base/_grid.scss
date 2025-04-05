@@ -1,0 +1,63 @@
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-full{
+  width: 94%;
+  margin: 0 auto;
+}
+
+.row{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap !important;
+  justify-content: space-between;
+}
+
+.hidden{
+  display: none;
+}
+
+.absolute{
+  position: absolute !important;
+}
+.relative{
+  position: relative !important;
+}
+
+.fixed{
+  position: fixed !important;
+}
+
+.sticky{
+  position: sticky !important;
+}
+
+.overflow-h{
+  overflow: hidden !important;
+}
+
+
+@each $key ,$value in $break_points{
+  @media (min-width: $value) {
+    @for $i from 1 through $grid_col{
+      .col-#{$key}-#{$i}{
+        width: calc(100%/12 *$i);
+      }
+    }
+  }
+}
+
+@each $key ,$value in $break_points{
+  @media (max-width: $value) {
+    .hidden-#{$key}{
+      display: none;
+    }
+    .show-#{$key}{
+      display: block;
+    }
+  }
+}
+

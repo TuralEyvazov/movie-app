@@ -1,0 +1,11 @@
+@use '../../scss/main' as *;
+
+.app{
+  background-color: red;
+}
+
+.home{
+  height: 700px;
+  background-color: rgba(182, 34, 34, 0.37);
+  padding: 40px;
+}

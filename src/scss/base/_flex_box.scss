@@ -1,0 +1,49 @@
+.d-flex{
+  display: flex;
+}
+
+.d-block{
+  display: block;
+}
+
+.d-none{
+  display: none;
+}
+
+.flex-wrap{
+  flex-wrap: wrap !important;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+.flex-row{
+  flex-direction: row;
+}
+
+@for $i from 1 through 20{
+  .gap-#{$i*2}{
+    gap: $i*2px;
+  }
+
+  .gap-column-#{$i*2}{
+    column-gap: $i*2px;
+  }
+
+  .gap-row-#{$i*2}{
+    row-gap: $i*2px;
+  }
+};
+
+@each $key,$value in $justify{
+  .justify-#{$key} {
+    justify-content: $value;
+  }
+};
+
+@each $key,$value in $align{
+  .item-#{$key} {
+    align-items: $value;
+  }
+}

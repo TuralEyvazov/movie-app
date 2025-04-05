@@ -1,0 +1,17 @@
+@each $value in $wh_size{
+  .w-#{$value} {
+    width: #{$value + "%"};
+  }
+}
+
+@each $value in $wh_size{
+  .h-vh-#{$value} {
+    height: #{$value + "vh"};
+  }
+}
+
+@each $value in $wh_size{
+  .h-#{$value} {
+    height: #{$value + "%"};
+  }
+}

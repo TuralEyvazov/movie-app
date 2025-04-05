@@ -1,0 +1,30 @@
+@for $i from 1 through 50 {
+  .fs-#{$i *2}{
+    font-size: #{$i/16*2}rem;
+  }
+}
+
+@each $value in $weights{
+  .fw-#{$value}{
+    font-weight: #{$value};
+  }
+}
+
+.text-center{
+  text-align: center !important;
+}
+
+.text-left{
+  text-align: left !important;
+}
+
+.text-right{
+  text-align: right !important;
+}
+
+.family-primary{
+  font-family: "Montserrat", sans-serif;
+
+}
+
+
